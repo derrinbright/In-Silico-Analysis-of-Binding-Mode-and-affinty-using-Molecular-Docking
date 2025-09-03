@@ -77,7 +77,7 @@ The ligand also required significant preparation to ensure it was in a physicall
 
 | Grid Box Definition | Configuration File |
 | :---: | :---: |
-| <img src="images/Grid%20Box%20around%20the%20Ligand%20Binding%20Sites%20for%20Specific%20Docking.jpg" width="300"/><br>*Figure 4: The search space for the simulation defined around the protein's active site.* | <img src="images/CONFIGURATION%20FILE%20.png" width="500"/><br>*Figure 5: The configuration file specifying all simulation parameters.* |
+| <img src="images/Grid%20Box%20around%20the%20Ligand%20Binding%20Sites%20for%20Specific%20Docking.jpg" width="300"/><br>*Figure 4: The search space for the simulation defined around the protein's active site.* | <img src="images/CONFIGURATION%20FILE%20.png" width="100"/><br>*Figure 5: The configuration file specifying all simulation parameters.* |
 
 
 -----
