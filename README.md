@@ -98,8 +98,10 @@ AutoDock Vina generated nine distinct binding poses, ranked by their binding aff
 
 The top-ranked pose shows the ligand fitting snugly within the defined active site pocket.
 
-!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_8_image_0.png)
-*Figure 7: The best predicted binding pose of CEP-6331 (purple) within the 3DTC kinase (wheat), corresponding to the -12.23 kcal/mol affinity.*
+<img src="images/Best%20Stable%20Ligand%20Conformation%20with%20the%20Protein.jpg" width="500"/>
+
+*Figure 7: The best predicted binding pose of CEP-6331 (green) within the 3DTC kinase (sky blue), corresponding to the -12.23 kcal/mol affinity.*
+
 
 ### Analysis of Molecular Interactions
 
