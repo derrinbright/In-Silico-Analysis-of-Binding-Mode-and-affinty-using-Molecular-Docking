@@ -66,9 +66,8 @@ The ligand also required significant preparation to ensure it was in a physicall
 3.  **Finalization for Vina:** The energy-minimized ligand was loaded into MGLTools, where Gasteiger charges were assigned and its rotatable bonds were defined. The final structure was saved in the `lig_m.pdbqt` format.
 
 | 2D Ligand Structure | 3D Ligand Structure (Post-Preparation) |
-| :---: | :---: |
-|!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_4_image_0.png) |!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_3_image_0.png) |
-| *Figure 2: The initial 2D representation of CEP-6331.* | *Figure 3: The final, energy-minimized 3D ligand ready for docking.* |
+|:----:|:----:|
+| <img src="images/2D%20STRUCTURE%20OF%20LIGAND.png" width="300"/> <br> *Figure 2: The initial 2D representation of CEP-6331.* | <img src="images/Ligand_3D_Structure.png" width="300"/> <br> *Figure 3: The final, energy-minimized 3D ligand ready for docking.* |
 
 ### Phase 3: Docking Simulation with AutoDock Vina
 
