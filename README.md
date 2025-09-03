@@ -52,7 +52,7 @@ The raw protein structure from the PDB is not suitable for docking and requires 
 4.  **Charge Assignment:** Kollman charges were assigned to the protein to correctly model electrostatic forces during the simulation.
 5.  **Finalization:** The prepared protein was saved in the `receptor.pdbqt` format required by AutoDock Vina.
 
-!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_2_image_0.png)
+! (./images/3D Structure of the 3DTC Protein.jpg)
 *Figure 1: The 3D ribbon structure of the 3DTC kinase loaded in MGLTools before preparation.*
 
 ### Phase 2: Ligand Preparation (Inhibitor CEP-6331)
