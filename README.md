@@ -89,9 +89,10 @@ The simulation output provided a wealth of data, which was analyzed to draw the 
 ### Binding Affinity and Pose Ranking
 
 AutoDock Vina generated nine distinct binding poses, ranked by their binding affinity score. The top-ranked pose showed a highly favorable score of **-12.23 kcal/mol**, indicating a very stable and potent interaction.
+<img src="images/Output%20Log%20File.png" width="500"/>
 
-!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_7_image_0.png)
 *Figure 6: The output log file showing the binding affinities for the top predicted poses.*
+
 
 ### Visualization of the Top Binding Pose
 
