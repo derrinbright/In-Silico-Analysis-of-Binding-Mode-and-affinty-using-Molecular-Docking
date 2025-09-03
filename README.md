@@ -2,18 +2,18 @@
 
 **Project Status: Completed**
 
-## 1. Project Overview
+## 1\. Project Overview
 
 This project is a comprehensive molecular docking study designed to investigate the binding interaction between a human kinase protein and a known small-molecule inhibitor. The primary objective was to implement a full computational workflow to predict the binding affinity and identify the specific molecular interactions that stabilize the protein-ligand complex.
 
 The project successfully validated the computational methodology by reproducing an experimentally known interaction, achieving a strong predicted binding affinity of **-12.23 kcal/mol**. The analysis further revealed that the stability of the complex is driven by a combination of hydrophobic and polar interactions within the protein's active site.
 
--   **Protein Target:** 3DTC (Mixed-Lineage Kinase 1 - MLK1)
--   **Ligand:** CEP-6331 (A potent kinase inhibitor)
+  - **Protein Target:** 3DTC (Mixed-Lineage Kinase 1 - MLK1)
+  - **Ligand:** CEP-6331 (A potent kinase inhibitor)
 
----
+-----
 
-## 2. Background and Rationale
+## 2\. Background and Rationale
 
 ### Why This Project?
 
@@ -21,24 +21,24 @@ The goal of this project was to perform a **validation study**. Instead of explo
 
 ### About the Molecules
 
--   **3DTC (The Protein):** This is the PDB ID for the human enzyme **Mixed-Lineage Kinase 1 (MLK1)**. Kinases are crucial regulators of cell communication and are among the most important drug targets in modern medicine, especially in oncology. The 3DTC structure is a co-crystallized complex, meaning it was experimentally captured with its inhibitor already bound, providing a perfect "answer key" for this study.
+  - **3DTC (The Protein):** This is the PDB ID for the human enzyme **Mixed-Lineage Kinase 1 (MLK1)**. Kinases are crucial regulators of cell communication and are among the most important drug targets in modern medicine, especially in oncology. The 3DTC structure is a co-crystallized complex, meaning it was experimentally captured with its inhibitor already bound, providing a perfect "answer key" for this study.
 
--   **CEP-6331 (The Ligand):** This is a potent small-molecule inhibitor specifically designed to target and block the function of the MLK kinase family. In the PDB database, it is referred to as "compound 16." By choosing the known binding partner of 3DTC, I could form a clear hypothesis: my simulation should predict a strong binding affinity.
+  - **CEP-6331 (The Ligand):** This is a potent small-molecule inhibitor specifically designed to target and block the function of the MLK kinase family. In the PDB database, it is referred to as "compound 16." By choosing the known binding partner of 3DTC, I could form a clear hypothesis: my simulation should predict a strong binding affinity.
 
----
+-----
 
-## 3. Tools and Technologies
+## 3\. Tools and Technologies
 
 A suite of specialized bioinformatics tools was used to execute this project:
 
--   **Databases:** Protein Data Bank (PDB), ZINC15
--   **Molecular Preparation:** MGLTools, Avogadro, OpenBabel
--   **Simulation Engine:** AutoDock Vina
--   **Visualization & Analysis:** PyMOL, AutoDockTools
+  - **Databases:** Protein Data Bank (PDB), ZINC15
+  - **Molecular Preparation:** MGLTools, Avogadro, OpenBabel
+  - **Simulation Engine:** AutoDock Vina
+  - **Visualization & Analysis:** PyMOL, AutoDockTools
 
----
+-----
 
-## 4. Methodology: A Step-by-Step Workflow
+## 4\. Methodology: A Step-by-Step Workflow
 
 The project was executed in three main phases: molecule preparation, simulation, and analysis.
 
@@ -63,10 +63,10 @@ The ligand also required significant preparation to ensure it was in a physicall
 2.  **Energy Minimization:** This is a crucial step. Using Avogadro with the MMFF94 force field, the ligand's geometry was optimized to find its most stable, low-energy conformation. This ensures the simulation starts with a realistic molecule.
 3.  **Finalization for Vina:** The energy-minimized ligand was loaded into MGLTools, where Gasteiger charges were assigned and its rotatable bonds were defined. The final structure was saved in the `lig_m.pdbqt` format.
 
-| 2D Ligand Structure                                                                                                                                                           | 3D Ligand Structure (Post-Preparation)                                                                                                                                                |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2D Ligand Structure | 3D Ligand Structure (Post-Preparation) |
+| :---: | :---: |
 |!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_4_image_0.png) |!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_3_image_0.png) |
-| *Figure 2: The initial 2D representation of CEP-6331.*                                                                                                                          | *Figure 3: The final, energy-minimized 3D ligand ready for docking.*                                                                                                                  |
+| *Figure 2: The initial 2D representation of CEP-6331.* | *Figure 3: The final, energy-minimized 3D ligand ready for docking.* |
 
 ### Phase 3: Docking Simulation with AutoDock Vina
 
@@ -74,14 +74,14 @@ The ligand also required significant preparation to ensure it was in a physicall
 2.  **Configuration:** A `config.txt` file was created to provide all necessary parameters to Vina, including the input files, the grid box coordinates, and an `exhaustiveness` level of 8 for a robust search.
 3.  **Execution:** The simulation was implemented via the command line, instructing AutoDock Vina to begin the docking process.
 
-| Grid Box Definition                                                                                                                                                           | Configuration File                                                                                                                                                                    |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Grid Box Definition | Configuration File |
+| :---: | :---: |
 |!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_5_image_0.png) |!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_5_image_1.png) |
-| *Figure 4: The search space for the simulation defined around the protein's active site.*                                                                                        | *Figure 5: The configuration file specifying all simulation parameters.*                                                                                                              |
+| *Figure 4: The search space for the simulation defined around the protein's active site.* | *Figure 5: The configuration file specifying all simulation parameters.* |
 
----
+-----
 
-## 5. Results and Analysis
+## 5\. Results and Analysis
 
 The simulation output provided a wealth of data, which was analyzed to draw the final conclusions.
 
@@ -96,3 +96,25 @@ AutoDock Vina generated nine distinct binding poses, ranked by their binding aff
 
 The top-ranked pose shows the ligand fitting snugly within the defined active site pocket.
 
+!(https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_8_image_0.png)
+*Figure 7: The best predicted binding pose of CEP-6331 (purple) within the 3DTC kinase (wheat), corresponding to the -12.23 kcal/mol affinity.*
+
+### Analysis of Molecular Interactions
+
+The most critical part of the analysis was to understand *why* the binding was so strong. By visualizing the interactions for the top pose, I identified the specific amino acids responsible for stabilizing the complex.
+
+![Figure 8: Visualization of the key amino acid residues interacting with the ligand in the top-ranked pose.](https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_12_image_0.png)
+*Figure 8: Visualization of the key amino acid residues interacting with the ligand in the top-ranked pose.*
+
+The analysis revealed that the binding is stabilized by a combination of forces from a cluster of residues:
+
+  - **Hydrophobic Contacts:** The pocket is lined with nonpolar residues (e.g., **ILE180, ALA100, LEU274**) that form favorable hydrophobic interactions with the ligand.
+  - **Polar Interactions:** The binding is further anchored by key polar residues (e.g., **LYS228, ASP284, THR283**) that likely form hydrogen bonds or electrostatic interactions.
+
+-----
+
+## 6\. Conclusion
+
+This project successfully implemented a full molecular docking workflow to computationally validate a known protein-ligand interaction. The simulation accurately predicted a high-affinity binding between the 3DTC kinase and its inhibitor CEP-6331, consistent with experimental data.
+
+The key takeaway is that the stability of this complex is not due to a single interaction, but rather the ligand's excellent fit within a chemically diverse pocket that provides both broad hydrophobic stabilization and specific, directed polar interactions. This successful validation demonstrates the robustness of the methodology, which can now be confidently applied to screen novel, unknown compounds in future drug discovery projects.
