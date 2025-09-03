@@ -67,7 +67,7 @@ The ligand also required significant preparation to ensure it was in a physicall
 
 | 2D Ligand Structure | 3D Ligand Structure (Post-Preparation) |
 |:----:|:----:|
-| <img src="images/2D%20STRUCTURE%20OF%20LIGAND.png" width="300"/> <br> *Figure 2: The initial 2D representation of CEP-6331.* | <img src="images/Ligand_3D_Structure.png" width="300"/> <br> *Figure 3: The final, energy-minimized 3D ligand ready for docking.* |
+| <img src="images/2D%20STRUCTURE%20OF%20LIGAND.png" width="400"/> <br> *Figure 2: The initial 2D representation of CEP-6331.* | <img src="images/Ligand_3D_Structure.png" width="400"/> <br> *Figure 3: The final, energy-minimized 3D ligand ready for docking.* |
 
 ### Phase 3: Docking Simulation with AutoDock Vina
 
