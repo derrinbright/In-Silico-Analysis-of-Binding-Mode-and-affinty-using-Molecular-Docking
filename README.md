@@ -91,6 +91,7 @@ The simulation output provided a wealth of data, which was analyzed to draw the 
 AutoDock Vina generated nine distinct binding poses, ranked by their binding affinity score. The top-ranked pose showed a highly favorable score of **-12.23 kcal/mol**, indicating a very stable and potent interaction.
 
 <img src="images/Output%20Log%20File.png" width="300"/>
+
 *Figure 6: The output log file showing the binding affinities for the top predicted poses.*
 
 
@@ -107,8 +108,10 @@ The top-ranked pose shows the ligand fitting snugly within the defined active si
 
 The most critical part of the analysis was to understand *why* the binding was so strong. By visualizing the interactions for the top pose, I identified the specific amino acids responsible for stabilizing the complex.
 
-![Figure 8: Visualization of the key amino acid residues interacting with the ligand in the top-ranked pose.](https://storage.googleapis.com/generative-ai-public-data/deep_research/PROMPT_IMAGES/Molecular%20docking%20results%20-%20images%20%20(1).pdf_page_12_image_0.png)
+<img src="images/Visualisation%20of%20Hydrophobic%20Interactions%20between%20the%20amino%20acids%20and%20the%20ligand.jpg" width="500"/>
+
 *Figure 8: Visualization of the key amino acid residues interacting with the ligand in the top-ranked pose.*
+
 
 The analysis revealed that the binding is stabilized by a combination of forces from a cluster of residues:
 
